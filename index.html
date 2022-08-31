@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body>
+  <div class="container">
+
+
+    <main>
+      <div class="main-content">
+        <div class="header">
+          <img src="images/icon-star.svg" alt="star" class="star-logo">
+        </div>
+
+        <section class="main-text">
+          <h1>How did we do?</h1>
+          <p>Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+        </section>
+
+        <section class="buttons">
+
+          <div class="rating-btns">
+            <button class="rating-btn" id="1" value="1">1</button>
+            <button class="rating-btn" id="2" value="2">2</button>
+            <button class="rating-btn" id="3" value="3">3</button>
+            <button class="rating-btn" id="4" value="4">4</button>
+            <button class="rating-btn" id="5" value="5">5</button>
+          </div>
+
+          <div class="submit-btn-container">
+            <button class="submit-btn" type="submit">Submit</button>
+          </div>
+
+        </section>
+      </div>
+      <section class="submited-rating hidden">
+
+        <div class="img-submited-rating">
+          <img src="images/illustration-thank-you.svg">
+        </div>
+
+        <div class="user-rating">
+          <p class="rating-value">You selected 4 out of 5</p>
+        </div>
+
+        <div class="rating-feedback">
+          <h1>Thank you!</h1>
+          <p>We appreciate you taking the time to give a rating. If you ever need more support,
+            don't hesitate to get in touch!</p>
+        </div>
+
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

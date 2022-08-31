@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Overpass', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: hsl(216, 12%, 8%);
+}
+
+/* Typography */
+.main-text p,
+.rating-feedback p {
+    line-height: 1.5em;
+    color: hsl(217, 12%, 63%);
+}
+
+
+
+/* Layout */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+    margin: auto;
+    color: hsl(0, 0%, 100%);
+    min-width: 375px;
+    max-width: 400px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background: hsl(213, 19%, 18%);
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 0 2em;
+}
+
+.header {
+    margin-top: 25px;
+}
+
+.star-logo {
+    background: hsl(216, 12%, 8%);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* Buttons */
+
+.rating-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.rating-btn {
+    background: hsl(216, 12%, 8%);
+    padding: 1.25em 1.5em;
+    border-radius: 50%;
+    color: white;
+    border: none;
+
+}
+
+.rating-btn:hover {
+    background: hsl(217, 12%, 63%)
+}
+
+.rating-btn:focus,
+.rating-btn:active {
+    background: hsl(25, 97%, 53%);
+}
+
+.submit-btn-container {
+    display: flex;
+}
+
+.submit-btn {
+    background: hsl(25, 97%, 53%);
+    width: 100%;
+    border-radius: 1.5em;
+    border: none;
+    padding: .75em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 2em;
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+    background: #fff;
+    color: hsl(25, 97%, 53%);
+    box-shadow: 0 0 0 2px white;
+}
+
+.submited-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.img-submited-rating {
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+.user-rating {
+    width: 60%;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+    background: hsl(216, 12%, 8%);
+    margin-top: 0.5em;
+    padding: 0;
+    border-radius: 30px;
+    background: opacity 1;
+
+}
+
+.rating-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-feedback h1 {
+    margin-bottom: 0;
+}
+
+.rating-feedback p {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
